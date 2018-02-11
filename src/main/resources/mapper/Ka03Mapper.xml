@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zx.intro.mapper.Ka03Mapper">
+  <resultMap id="BaseResultMap" type="com.zx.intro.dao.Ka03">
+    <result column="AAA027" jdbcType="VARCHAR" property="aaa027" />
+    <result column="AKE001" jdbcType="VARCHAR" property="ake001" />
+    <result column="AKE002" jdbcType="VARCHAR" property="ake002" />
+    <result column="AKA165" jdbcType="VARCHAR" property="aka165" />
+    <result column="AKA198" jdbcType="VARCHAR" property="aka198" />
+    <result column="AKA096" jdbcType="VARCHAR" property="aka096" />
+    <result column="AKA097" jdbcType="VARCHAR" property="aka097" />
+    <result column="AKE115" jdbcType="VARCHAR" property="ake115" />
+    <result column="AKA173" jdbcType="VARCHAR" property="aka173" />
+    <result column="AKA052" jdbcType="VARCHAR" property="aka052" />
+    <result column="AKA063" jdbcType="VARCHAR" property="aka063" />
+    <result column="AAC004" jdbcType="VARCHAR" property="aac004" />
+    <result column="AKA065" jdbcType="VARCHAR" property="aka065" />
+    <result column="AKE003" jdbcType="VARCHAR" property="ake003" />
+    <result column="BATCH_NO" jdbcType="VARCHAR" property="batchNo" />
+    <result column="CREATE_DATE" jdbcType="DATE" property="createDate" />
+    <result column="UPDATE_DATE" jdbcType="DATE" property="updateDate" />
+    <result column="REMOVED" jdbcType="VARCHAR" property="removed" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    AAA027, AKE001, AKE002, AKA165, AKA198, AKA096, AKA097, AKE115, AKA173, AKA052, AKA063, 
+    AAC004, AKA065, AKE003, BATCH_NO, CREATE_DATE, UPDATE_DATE, REMOVED
+  </sql>
+  <select id="selectByExample" parameterType="com.zx.intro.dao.Ka03Example" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from KA03
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.zx.intro.dao.Ka03Example">
+    delete from KA03
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.zx.intro.dao.Ka03">
+    insert into KA03 (AAA027, AKE001, AKE002, 
+      AKA165, AKA198, AKA096, 
+      AKA097, AKE115, AKA173, 
+      AKA052, AKA063, AAC004, 
+      AKA065, AKE003, BATCH_NO, 
+      CREATE_DATE, UPDATE_DATE, REMOVED
+      )
+    values (#{aaa027,jdbcType=VARCHAR}, #{ake001,jdbcType=VARCHAR}, #{ake002,jdbcType=VARCHAR}, 
+      #{aka165,jdbcType=VARCHAR}, #{aka198,jdbcType=VARCHAR}, #{aka096,jdbcType=VARCHAR}, 
+      #{aka097,jdbcType=VARCHAR}, #{ake115,jdbcType=VARCHAR}, #{aka173,jdbcType=VARCHAR}, 
+      #{aka052,jdbcType=VARCHAR}, #{aka063,jdbcType=VARCHAR}, #{aac004,jdbcType=VARCHAR}, 
+      #{aka065,jdbcType=VARCHAR}, #{ake003,jdbcType=VARCHAR}, #{batchNo,jdbcType=VARCHAR}, 
+      #{createDate,jdbcType=DATE}, #{updateDate,jdbcType=DATE}, #{removed,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.zx.intro.dao.Ka03">
+    insert into KA03
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="aaa027 != null">
+        AAA027,
+      </if>
+      <if test="ake001 != null">
+        AKE001,
+      </if>
+      <if test="ake002 != null">
+        AKE002,
+      </if>
+      <if test="aka165 != null">
+        AKA165,
+      </if>
+      <if test="aka198 != null">
+        AKA198,
+      </if>
+      <if test="aka096 != null">
+        AKA096,
+      </if>
+      <if test="aka097 != null">
+        AKA097,
+      </if>
+      <if test="ake115 != null">
+        AKE115,
+      </if>
+      <if test="aka173 != null">
+        AKA173,
+      </if>
+      <if test="aka052 != null">
+        AKA052,
+      </if>
+      <if test="aka063 != null">
+        AKA063,
+      </if>
+      <if test="aac004 != null">
+        AAC004,
+      </if>
+      <if test="aka065 != null">
+        AKA065,
+      </if>
+      <if test="ake003 != null">
+        AKE003,
+      </if>
+      <if test="batchNo != null">
+        BATCH_NO,
+      </if>
+      <if test="createDate != null">
+        CREATE_DATE,
+      </if>
+      <if test="updateDate != null">
+        UPDATE_DATE,
+      </if>
+      <if test="removed != null">
+        REMOVED,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="aaa027 != null">
+        #{aaa027,jdbcType=VARCHAR},
+      </if>
+      <if test="ake001 != null">
+        #{ake001,jdbcType=VARCHAR},
+      </if>
+      <if test="ake002 != null">
+        #{ake002,jdbcType=VARCHAR},
+      </if>
+      <if test="aka165 != null">
+        #{aka165,jdbcType=VARCHAR},
+      </if>
+      <if test="aka198 != null">
+        #{aka198,jdbcType=VARCHAR},
+      </if>
+      <if test="aka096 != null">
+        #{aka096,jdbcType=VARCHAR},
+      </if>
+      <if test="aka097 != null">
+        #{aka097,jdbcType=VARCHAR},
+      </if>
+      <if test="ake115 != null">
+        #{ake115,jdbcType=VARCHAR},
+      </if>
+      <if test="aka173 != null">
+        #{aka173,jdbcType=VARCHAR},
+      </if>
+      <if test="aka052 != null">
+        #{aka052,jdbcType=VARCHAR},
+      </if>
+      <if test="aka063 != null">
+        #{aka063,jdbcType=VARCHAR},
+      </if>
+      <if test="aac004 != null">
+        #{aac004,jdbcType=VARCHAR},
+      </if>
+      <if test="aka065 != null">
+        #{aka065,jdbcType=VARCHAR},
+      </if>
+      <if test="ake003 != null">
+        #{ake003,jdbcType=VARCHAR},
+      </if>
+      <if test="batchNo != null">
+        #{batchNo,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=DATE},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=DATE},
+      </if>
+      <if test="removed != null">
+        #{removed,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.zx.intro.dao.Ka03Example" resultType="java.lang.Integer">
+    select count(*) from KA03
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <select id="count" parameterType="com.zx.intro.dao.Ka03" resultType="java.lang.Integer">
+    select count(*) from KA03
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update KA03
+    <set>
+      <if test="record.aaa027 != null">
+        AAA027 = #{record.aaa027,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ake001 != null">
+        AKE001 = #{record.ake001,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ake002 != null">
+        AKE002 = #{record.ake002,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aka165 != null">
+        AKA165 = #{record.aka165,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aka198 != null">
+        AKA198 = #{record.aka198,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aka096 != null">
+        AKA096 = #{record.aka096,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aka097 != null">
+        AKA097 = #{record.aka097,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ake115 != null">
+        AKE115 = #{record.ake115,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aka173 != null">
+        AKA173 = #{record.aka173,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aka052 != null">
+        AKA052 = #{record.aka052,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aka063 != null">
+        AKA063 = #{record.aka063,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aac004 != null">
+        AAC004 = #{record.aac004,jdbcType=VARCHAR},
+      </if>
+      <if test="record.aka065 != null">
+        AKA065 = #{record.aka065,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ake003 != null">
+        AKE003 = #{record.ake003,jdbcType=VARCHAR},
+      </if>
+      <if test="record.batchNo != null">
+        BATCH_NO = #{record.batchNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createDate != null">
+        CREATE_DATE = #{record.createDate,jdbcType=DATE},
+      </if>
+      <if test="record.updateDate != null">
+        UPDATE_DATE = #{record.updateDate,jdbcType=DATE},
+      </if>
+      <if test="record.removed != null">
+        REMOVED = #{record.removed,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update KA03
+    set AAA027 = #{record.aaa027,jdbcType=VARCHAR},
+      AKE001 = #{record.ake001,jdbcType=VARCHAR},
+      AKE002 = #{record.ake002,jdbcType=VARCHAR},
+      AKA165 = #{record.aka165,jdbcType=VARCHAR},
+      AKA198 = #{record.aka198,jdbcType=VARCHAR},
+      AKA096 = #{record.aka096,jdbcType=VARCHAR},
+      AKA097 = #{record.aka097,jdbcType=VARCHAR},
+      AKE115 = #{record.ake115,jdbcType=VARCHAR},
+      AKA173 = #{record.aka173,jdbcType=VARCHAR},
+      AKA052 = #{record.aka052,jdbcType=VARCHAR},
+      AKA063 = #{record.aka063,jdbcType=VARCHAR},
+      AAC004 = #{record.aac004,jdbcType=VARCHAR},
+      AKA065 = #{record.aka065,jdbcType=VARCHAR},
+      AKE003 = #{record.ake003,jdbcType=VARCHAR},
+      BATCH_NO = #{record.batchNo,jdbcType=VARCHAR},
+      CREATE_DATE = #{record.createDate,jdbcType=DATE},
+      UPDATE_DATE = #{record.updateDate,jdbcType=DATE},
+      REMOVED = #{record.removed,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+</mapper>

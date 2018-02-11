@@ -1,0 +1,1183 @@
+2018-02-10 21:23:30.606 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:23:31.126 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:23:31.276 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31ce1dee: startup date [Sat Feb 10 21:23:31 CST 2018]; root of context hierarchy
+2018-02-10 21:23:33.534 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:23:33.546 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:23:33.548 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:23:33.652 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:23:33.653 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 2378 ms
+2018-02-10 21:23:33.826 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:23:33.831 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:23:33.831 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:23:33.832 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:23:33.832 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:23:35.026 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31ce1dee: startup date [Sat Feb 10 21:23:31 CST 2018]; root of context hierarchy
+2018-02-10 21:23:35.091 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:23:35.092 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:23:35.096 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:23:35.097 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:23:35.135 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:23:35.136 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:23:35.179 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:23:35.205 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:23:35.554 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:23:35.659 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:23:35.791 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:23:35.798 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 5.863 seconds (JVM running for 10.032)
+2018-02-10 21:26:34.902 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-10 21:26:34.903 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-10 21:26:34.929 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-02-10 21:28:44.371 [http-nio-8080-exec-1] INFO  o.apache.tomcat.util.http.Parameters
+                -Invalid chunk starting at byte [0] and ending at byte [1] with a value of [=] ignored
+ Note: further occurrences of Parameter errors will be logged at DEBUG level.
+2018-02-10 21:34:52.220 [Thread-18] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31ce1dee: startup date [Sat Feb 10 21:23:31 CST 2018]; root of context hierarchy
+2018-02-10 21:34:52.226 [Thread-18] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:34:53.755 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:34:53.756 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:34:53.759 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3883b9fe: startup date [Sat Feb 10 21:34:53 CST 2018]; root of context hierarchy
+2018-02-10 21:34:54.384 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:34:54.386 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:34:54.387 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:34:54.426 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:34:54.428 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 669 ms
+2018-02-10 21:34:54.499 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:34:54.509 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:34:54.509 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:34:54.510 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:34:54.510 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:34:54.916 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3883b9fe: startup date [Sat Feb 10 21:34:53 CST 2018]; root of context hierarchy
+2018-02-10 21:34:54.934 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:34:54.935 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:34:54.938 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:34:54.939 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:34:54.950 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:34:54.950 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:34:54.963 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:34:54.973 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:34:55.037 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:34:55.134 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:34:55.182 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:34:55.186 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.518 seconds (JVM running for 689.399)
+2018-02-10 21:35:04.559 [Thread-26] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3883b9fe: startup date [Sat Feb 10 21:34:53 CST 2018]; root of context hierarchy
+2018-02-10 21:35:04.563 [Thread-26] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:35:07.782 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:35:07.783 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:35:07.790 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7657a3b5: startup date [Sat Feb 10 21:35:07 CST 2018]; root of context hierarchy
+2018-02-10 21:35:08.307 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:35:08.309 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:35:08.309 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:35:08.347 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:35:08.350 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 560 ms
+2018-02-10 21:35:08.437 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:35:08.438 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:35:08.439 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:35:08.440 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:35:08.440 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:35:08.979 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7657a3b5: startup date [Sat Feb 10 21:35:07 CST 2018]; root of context hierarchy
+2018-02-10 21:35:08.992 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:35:08.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:35:08.997 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:35:08.998 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:35:09.010 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:35:09.010 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:35:09.022 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:35:09.030 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:35:09.095 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:35:09.176 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:35:09.233 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:35:09.237 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.665 seconds (JVM running for 703.449)
+2018-02-10 21:35:12.625 [Thread-32] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7657a3b5: startup date [Sat Feb 10 21:35:07 CST 2018]; root of context hierarchy
+2018-02-10 21:35:12.627 [Thread-32] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:35:13.738 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:35:13.739 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:35:13.742 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d6ce1c6: startup date [Sat Feb 10 21:35:13 CST 2018]; root of context hierarchy
+2018-02-10 21:35:14.397 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:35:14.399 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:35:14.399 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:35:14.436 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:35:14.448 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 706 ms
+2018-02-10 21:35:14.503 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:35:14.505 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:35:14.505 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:35:14.505 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:35:14.505 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:35:14.880 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d6ce1c6: startup date [Sat Feb 10 21:35:13 CST 2018]; root of context hierarchy
+2018-02-10 21:35:14.897 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:35:14.898 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:35:14.906 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:35:14.907 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:35:14.925 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:35:14.925 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:35:14.949 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:35:14.959 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:35:15.039 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:35:15.175 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:35:15.222 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:35:15.226 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.58 seconds (JVM running for 709.438)
+2018-02-10 21:35:17.637 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-10 21:35:17.638 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-10 21:35:17.642 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018-02-10 21:35:20.484 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Resolved exception caused by Handler execution: java.util.MissingFormatArgumentException: Format specifier '%s'
+2018-02-10 21:35:25.301 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Resolved exception caused by Handler execution: java.util.MissingFormatArgumentException: Format specifier '%s'
+2018-02-10 21:35:59.034 [Thread-38] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d6ce1c6: startup date [Sat Feb 10 21:35:13 CST 2018]; root of context hierarchy
+2018-02-10 21:35:59.036 [Thread-38] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:35:59.864 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:35:59.864 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:35:59.867 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79bd7a42: startup date [Sat Feb 10 21:35:59 CST 2018]; root of context hierarchy
+2018-02-10 21:36:00.455 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:36:00.456 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:36:00.456 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:36:00.497 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:36:00.499 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 632 ms
+2018-02-10 21:36:00.574 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:36:00.575 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:36:00.576 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:36:00.577 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:36:00.577 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:36:00.961 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79bd7a42: startup date [Sat Feb 10 21:35:59 CST 2018]; root of context hierarchy
+2018-02-10 21:36:00.973 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:36:00.973 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:36:00.975 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:36:00.975 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:36:00.984 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:36:00.985 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:36:00.994 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:36:01.000 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:36:01.058 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:36:01.175 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:36:01.243 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:36:01.246 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.474 seconds (JVM running for 755.457)
+2018-02-10 21:36:04.480 [Thread-44] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@79bd7a42: startup date [Sat Feb 10 21:35:59 CST 2018]; root of context hierarchy
+2018-02-10 21:36:04.482 [Thread-44] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:36:05.243 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:36:05.244 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:36:05.247 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d289917: startup date [Sat Feb 10 21:36:05 CST 2018]; root of context hierarchy
+2018-02-10 21:36:05.746 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:36:05.746 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:36:05.747 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:36:05.775 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:36:05.777 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 530 ms
+2018-02-10 21:36:05.827 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:36:05.827 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:36:05.827 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:36:05.828 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:36:05.828 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:36:06.206 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d289917: startup date [Sat Feb 10 21:36:05 CST 2018]; root of context hierarchy
+2018-02-10 21:36:06.220 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:36:06.220 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:36:06.223 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:36:06.224 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:36:06.238 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:36:06.238 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:36:06.253 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:36:06.262 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:36:06.319 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:36:06.396 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:36:06.444 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:36:06.447 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.271 seconds (JVM running for 760.657)
+2018-02-10 21:36:07.082 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-10 21:36:07.082 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-10 21:36:07.087 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2018-02-10 21:36:57.244 [Thread-50] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d289917: startup date [Sat Feb 10 21:36:05 CST 2018]; root of context hierarchy
+2018-02-10 21:36:57.246 [Thread-50] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:36:58.295 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:36:58.296 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:36:58.300 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70745ba6: startup date [Sat Feb 10 21:36:58 CST 2018]; root of context hierarchy
+2018-02-10 21:36:58.854 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:36:58.855 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:36:58.855 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:36:58.901 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:36:58.903 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 604 ms
+2018-02-10 21:36:58.947 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:36:58.948 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:36:58.948 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:36:58.948 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:36:58.948 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:36:59.325 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70745ba6: startup date [Sat Feb 10 21:36:58 CST 2018]; root of context hierarchy
+2018-02-10 21:36:59.340 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:36:59.341 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:36:59.345 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:36:59.346 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:36:59.359 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:36:59.359 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:36:59.373 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:36:59.382 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:36:59.447 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:36:59.525 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:36:59.567 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:36:59.569 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.374 seconds (JVM running for 813.778)
+2018-02-10 21:38:33.308 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-10 21:38:33.308 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-10 21:38:33.312 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018-02-10 21:39:59.373 [Thread-56] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70745ba6: startup date [Sat Feb 10 21:36:58 CST 2018]; root of context hierarchy
+2018-02-10 21:39:59.375 [Thread-56] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:40:00.742 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:40:00.742 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:40:00.746 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12a5b9af: startup date [Sat Feb 10 21:40:00 CST 2018]; root of context hierarchy
+2018-02-10 21:40:01.678 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:40:01.679 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:40:01.679 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:40:01.789 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:40:01.792 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 1046 ms
+2018-02-10 21:40:01.853 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:40:01.854 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:40:01.854 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:40:01.854 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:40:01.854 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:40:02.654 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12a5b9af: startup date [Sat Feb 10 21:40:00 CST 2018]; root of context hierarchy
+2018-02-10 21:40:02.683 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:40:02.684 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:40:02.688 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:40:02.688 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:40:02.702 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:40:02.702 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:40:02.717 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:40:02.725 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:40:02.794 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:40:02.903 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:40:02.985 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:40:02.989 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 2.326 seconds (JVM running for 997.193)
+2018-02-10 21:40:15.465 [Thread-62] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12a5b9af: startup date [Sat Feb 10 21:40:00 CST 2018]; root of context hierarchy
+2018-02-10 21:40:15.467 [Thread-62] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:40:18.366 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:40:18.367 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:40:18.373 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@184b4add: startup date [Sat Feb 10 21:40:18 CST 2018]; root of context hierarchy
+2018-02-10 21:40:19.018 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:40:19.019 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:40:19.020 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:40:19.067 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:40:19.068 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 695 ms
+2018-02-10 21:40:19.111 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:40:19.112 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:40:19.112 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:40:19.112 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:40:19.112 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:40:19.455 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@184b4add: startup date [Sat Feb 10 21:40:18 CST 2018]; root of context hierarchy
+2018-02-10 21:40:19.469 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:40:19.469 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:40:19.473 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:40:19.473 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:40:19.483 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:40:19.484 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:40:19.496 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:40:19.505 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:40:19.580 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:40:19.656 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:40:19.705 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:40:19.708 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.579 seconds (JVM running for 1013.911)
+2018-02-10 21:40:21.991 [Thread-68] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@184b4add: startup date [Sat Feb 10 21:40:18 CST 2018]; root of context hierarchy
+2018-02-10 21:40:21.992 [Thread-68] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:40:23.301 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:40:23.302 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:40:23.306 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@718c058b: startup date [Sat Feb 10 21:40:23 CST 2018]; root of context hierarchy
+2018-02-10 21:40:23.826 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:40:23.827 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:40:23.827 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:40:23.858 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:40:23.861 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 555 ms
+2018-02-10 21:40:23.908 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:40:23.909 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:40:23.909 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:40:23.909 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:40:23.909 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:40:24.232 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@718c058b: startup date [Sat Feb 10 21:40:23 CST 2018]; root of context hierarchy
+2018-02-10 21:40:24.248 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:40:24.248 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:40:24.252 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:40:24.252 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:40:24.264 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:40:24.264 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:40:24.275 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:40:24.281 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:40:24.331 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:40:24.402 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:40:24.447 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:40:24.450 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.22 seconds (JVM running for 1018.652)
+2018-02-10 21:40:29.713 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-10 21:40:29.714 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-10 21:40:29.717 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2018-02-10 21:40:41.252 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'content' is not present
+2018-02-10 21:41:04.380 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'content' is not present
+2018-02-10 21:55:41.041 [Thread-74] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@718c058b: startup date [Sat Feb 10 21:40:23 CST 2018]; root of context hierarchy
+2018-02-10 21:55:41.049 [Thread-74] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:55:42.222 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:55:42.222 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:55:42.225 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c299b34: startup date [Sat Feb 10 21:55:42 CST 2018]; root of context hierarchy
+2018-02-10 21:55:42.829 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:55:42.830 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:55:42.830 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:55:42.860 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:55:42.862 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 637 ms
+2018-02-10 21:55:42.910 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:55:42.910 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:55:42.911 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:55:42.911 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:55:42.911 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:55:43.320 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c299b34: startup date [Sat Feb 10 21:55:42 CST 2018]; root of context hierarchy
+2018-02-10 21:55:43.339 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:55:43.340 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:55:43.344 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:55:43.345 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:55:43.361 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:55:43.362 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:55:43.375 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:55:43.384 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:55:43.452 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:55:43.523 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:55:43.567 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:55:43.570 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.424 seconds (JVM running for 1937.745)
+2018-02-10 21:56:53.968 [Thread-80] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c299b34: startup date [Sat Feb 10 21:55:42 CST 2018]; root of context hierarchy
+2018-02-10 21:56:53.970 [Thread-80] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:56:54.734 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:56:54.735 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:56:54.737 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6512b549: startup date [Sat Feb 10 21:56:54 CST 2018]; root of context hierarchy
+2018-02-10 21:56:55.280 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:56:55.281 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:56:55.281 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:56:55.314 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:56:55.316 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 579 ms
+2018-02-10 21:56:55.366 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:56:55.367 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:56:55.367 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:56:55.367 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:56:55.367 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:56:55.703 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6512b549: startup date [Sat Feb 10 21:56:54 CST 2018]; root of context hierarchy
+2018-02-10 21:56:55.713 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:56:55.714 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:56:55.724 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:56:55.724 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:56:55.734 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:56:55.740 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:56:55.794 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:56:55.865 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:56:55.918 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:56:55.922 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.283 seconds (JVM running for 2010.094)
+2018-02-10 21:57:15.286 [Thread-86] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6512b549: startup date [Sat Feb 10 21:56:54 CST 2018]; root of context hierarchy
+2018-02-10 21:57:15.289 [Thread-86] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:57:16.316 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:57:16.317 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:57:16.319 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ea26fb2: startup date [Sat Feb 10 21:57:16 CST 2018]; root of context hierarchy
+2018-02-10 21:57:16.942 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:57:16.943 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:57:16.943 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:57:16.971 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:57:16.972 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 653 ms
+2018-02-10 21:57:17.024 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:57:17.024 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:57:17.024 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:57:17.025 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:57:17.025 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:57:17.459 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ea26fb2: startup date [Sat Feb 10 21:57:16 CST 2018]; root of context hierarchy
+2018-02-10 21:57:17.495 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:57:17.495 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:57:17.496 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern3/{content}],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern3(java.lang.String)
+2018-02-10 21:57:17.499 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:57:17.500 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:57:17.515 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:57:17.515 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:57:17.532 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:57:17.542 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:57:17.618 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:57:17.729 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:57:17.778 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:57:17.782 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.531 seconds (JVM running for 2031.953)
+2018-02-10 21:57:43.405 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-10 21:57:43.406 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-10 21:57:43.408 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2018-02-10 21:59:06.404 [Thread-92] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ea26fb2: startup date [Sat Feb 10 21:57:16 CST 2018]; root of context hierarchy
+2018-02-10 21:59:06.406 [Thread-92] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:59:07.366 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:59:07.366 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:59:07.369 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@527616a5: startup date [Sat Feb 10 21:59:07 CST 2018]; root of context hierarchy
+2018-02-10 21:59:08.150 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:59:08.151 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:59:08.151 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:59:08.203 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:59:08.205 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 836 ms
+2018-02-10 21:59:08.261 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:59:08.261 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:59:08.261 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:59:08.261 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:59:08.261 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:59:08.624 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@527616a5: startup date [Sat Feb 10 21:59:07 CST 2018]; root of context hierarchy
+2018-02-10 21:59:08.644 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:59:08.644 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:59:08.645 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern3/{content}],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern3(java.lang.String)
+2018-02-10 21:59:08.649 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:59:08.649 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:59:08.669 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:08.669 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:08.692 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:59:08.706 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:08.778 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:59:08.908 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:59:08.967 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:59:08.970 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.685 seconds (JVM running for 2143.138)
+2018-02-10 21:59:12.426 [Thread-98] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@527616a5: startup date [Sat Feb 10 21:59:07 CST 2018]; root of context hierarchy
+2018-02-10 21:59:12.428 [Thread-98] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:59:14.248 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:59:14.249 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:59:14.253 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48d55785: startup date [Sat Feb 10 21:59:14 CST 2018]; root of context hierarchy
+2018-02-10 21:59:14.832 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:59:14.834 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:59:14.834 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:59:14.863 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:59:14.865 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 612 ms
+2018-02-10 21:59:14.911 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:59:14.911 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:59:14.911 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:59:14.912 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:59:14.912 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:59:15.211 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48d55785: startup date [Sat Feb 10 21:59:14 CST 2018]; root of context hierarchy
+2018-02-10 21:59:15.226 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:59:15.227 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:59:15.227 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern3/{content}],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern3(java.lang.String)
+2018-02-10 21:59:15.229 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:59:15.229 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:59:15.237 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:15.237 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:15.245 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:59:15.250 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:15.297 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:59:15.378 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:59:15.436 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:59:15.439 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.287 seconds (JVM running for 2149.607)
+2018-02-10 21:59:17.716 [Thread-104] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48d55785: startup date [Sat Feb 10 21:59:14 CST 2018]; root of context hierarchy
+2018-02-10 21:59:17.718 [Thread-104] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:59:19.605 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:59:19.606 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:59:19.610 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d90cc96: startup date [Sat Feb 10 21:59:19 CST 2018]; root of context hierarchy
+2018-02-10 21:59:20.209 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:59:20.210 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:59:20.211 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:59:20.238 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:59:20.240 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 630 ms
+2018-02-10 21:59:20.285 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:59:20.285 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:59:20.285 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:59:20.285 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:59:20.286 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:59:20.576 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d90cc96: startup date [Sat Feb 10 21:59:19 CST 2018]; root of context hierarchy
+2018-02-10 21:59:20.593 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:59:20.593 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:59:20.610 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:20.610 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:20.626 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:59:20.640 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:20.705 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:59:20.782 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:59:20.841 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:59:20.844 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.347 seconds (JVM running for 2155.011)
+2018-02-10 21:59:25.132 [Thread-110] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d90cc96: startup date [Sat Feb 10 21:59:19 CST 2018]; root of context hierarchy
+2018-02-10 21:59:25.137 [Thread-110] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Unregistering JMX-exposed beans on shutdown
+2018-02-10 21:59:25.920 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 9456 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 21:59:25.920 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 21:59:25.924 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20caa6e: startup date [Sat Feb 10 21:59:25 CST 2018]; root of context hierarchy
+2018-02-10 21:59:26.550 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 21:59:26.551 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 21:59:26.552 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 21:59:26.589 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 21:59:26.591 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 667 ms
+2018-02-10 21:59:26.644 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 21:59:26.645 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 21:59:26.645 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 21:59:26.645 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 21:59:26.646 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 21:59:27.169 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20caa6e: startup date [Sat Feb 10 21:59:25 CST 2018]; root of context hierarchy
+2018-02-10 21:59:27.187 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 21:59:27.188 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 21:59:27.189 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern3/{content}],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern3(java.lang.String)
+2018-02-10 21:59:27.192 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 21:59:27.193 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 21:59:27.210 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:27.210 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:27.226 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 21:59:27.236 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 21:59:27.355 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 21:59:27.468 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 21:59:27.520 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 21:59:27.524 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 1.671 seconds (JVM running for 2161.691)
+2018-02-10 22:16:06.251 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 4936 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 22:16:06.254 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 22:16:06.520 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@581b2f31: startup date [Sat Feb 10 22:16:06 CST 2018]; root of context hierarchy
+2018-02-10 22:16:09.791 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 22:16:09.805 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 22:16:09.807 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 22:16:09.949 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 22:16:09.951 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 3432 ms
+2018-02-10 22:16:10.201 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 22:16:10.210 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 22:16:10.211 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 22:16:10.212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 22:16:10.212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 22:16:11.817 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@581b2f31: startup date [Sat Feb 10 22:16:06 CST 2018]; root of context hierarchy
+2018-02-10 22:16:11.905 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 22:16:11.907 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/setter/message1],methods=[POST]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.setterMessage1(com.zx.intro.dao.Message)
+2018-02-10 22:16:11.908 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 22:16:11.909 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern3/{content}],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern3(java.lang.String)
+2018-02-10 22:16:11.914 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 22:16:11.915 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 22:16:11.967 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 22:16:11.968 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 22:16:11.998 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 22:16:12.035 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 22:16:12.401 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 22:16:12.519 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 22:16:12.645 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 22:16:12.656 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 7.165 seconds (JVM running for 9.316)
+2018-02-10 22:19:52.191 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-10 22:19:52.192 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-10 22:19:52.217 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-02-10 22:19:52.261 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2018-02-10 22:26:06.363 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 976 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 22:26:06.366 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 22:26:06.468 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@26c52e08: startup date [Sat Feb 10 22:26:06 CST 2018]; root of context hierarchy
+2018-02-10 22:26:08.896 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 22:26:08.910 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 22:26:08.912 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 22:26:09.026 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 22:26:09.026 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 2559 ms
+2018-02-10 22:26:09.235 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 22:26:09.243 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 22:26:09.244 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 22:26:09.245 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 22:26:09.245 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 22:26:10.496 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@26c52e08: startup date [Sat Feb 10 22:26:06 CST 2018]; root of context hierarchy
+2018-02-10 22:26:10.595 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern3/{content}],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern3(java.lang.String)
+2018-02-10 22:26:10.596 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 22:26:10.597 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/setter/message1],methods=[POST]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.setterMessage1(com.zx.intro.dao.Message)
+2018-02-10 22:26:10.597 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 22:26:10.601 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 22:26:10.602 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 22:26:10.665 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 22:26:10.666 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 22:26:10.694 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 22:26:10.752 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 22:26:11.090 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 22:26:11.311 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 22:26:11.423 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 22:26:11.432 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 6.152 seconds (JVM running for 9.908)
+2018-02-10 22:27:47.521 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-10 22:27:47.521 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-10 22:27:47.549 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-02-10 22:36:42.563 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Starting IntroApplication on ZXTHAH-HP with PID 10608 (D:\intro\target\classes started by ZXTHAH in D:\intro)
+2018-02-10 22:36:42.565 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -No active profile set, falling back to default profiles: default
+2018-02-10 22:36:42.680 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext
+                -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4bd0aed7: startup date [Sat Feb 10 22:36:42 CST 2018]; root of context hierarchy
+2018-02-10 22:36:44.684 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat initialized with port(s): 8080 (http)
+2018-02-10 22:36:44.697 [restartedMain] INFO  o.a.catalina.core.StandardService
+                -Starting service [Tomcat]
+2018-02-10 22:36:44.698 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+                -Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-02-10 22:36:44.787 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring embedded WebApplicationContext
+2018-02-10 22:36:44.788 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader
+                -Root WebApplicationContext: initialization completed in 2108 ms
+2018-02-10 22:36:44.947 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean
+                -Mapping servlet: 'dispatcherServlet' to [/]
+2018-02-10 22:36:44.951 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-02-10 22:36:44.952 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-02-10 22:36:44.953 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-02-10 22:36:44.953 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean
+                -Mapping filter: 'requestContextFilter' to: [/*]
+2018-02-10 22:36:45.820 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter
+                -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4bd0aed7: startup date [Sat Feb 10 22:36:42 CST 2018]; root of context hierarchy
+2018-02-10 22:36:45.885 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern1],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern1(java.lang.String)
+2018-02-10 22:36:45.886 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/setter/message1],methods=[POST]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.setterMessage1(com.zx.intro.dao.Message)
+2018-02-10 22:36:45.887 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern2],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern2(java.lang.String)
+2018-02-10 22:36:45.887 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/echo/getter/pattern3/{content}],methods=[GET]}" onto public com.zx.intro.dao.Echo com.zx.intro.control.EchoController.getterPattern3(java.lang.String)
+2018-02-10 22:36:45.891 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-02-10 22:36:45.891 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping
+                -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-02-10 22:36:45.931 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 22:36:45.931 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 22:36:45.958 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver
+                -Detected @ExceptionHandler methods in globalExceptionHandler
+2018-02-10 22:36:45.989 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping
+                -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-02-10 22:36:46.243 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+                -LiveReload server is running on port 35729
+2018-02-10 22:36:46.330 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter
+                -Registering beans for JMX exposure on startup
+2018-02-10 22:36:46.418 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer
+                -Tomcat started on port(s): 8080 (http)
+2018-02-10 22:36:46.424 [restartedMain] INFO  com.zx.intro.IntroApplication
+                -Started IntroApplication in 4.525 seconds (JVM running for 6.155)
+2018-02-10 22:37:00.873 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-02-10 22:37:00.874 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization started
+2018-02-10 22:37:00.896 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                -FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
